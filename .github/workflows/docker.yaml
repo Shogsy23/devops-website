@@ -47,7 +47,7 @@ Deploy-to-ec2:
           with:
             playbook: ansible-deploy.yml
             directory: ./
-            key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
+            key: ${{ secrets.EC2_SSH_PRIVATE_KEY2 }}
             options: |
               --user ${{ secrets.EC2_REMOTE_USER }}
             inventory: |
