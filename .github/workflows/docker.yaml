@@ -42,7 +42,7 @@ jobs:
       - name: Run playbook
         uses: dawidd6/action-ansible-playbook@v2
         with:
-          playbook: ansible-deploy.yml
+          playbook: ansible-dep.yml
           directory: ./
           key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
           options: |
