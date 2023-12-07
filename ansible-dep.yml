@@ -21,4 +21,4 @@
         image: pnixmorph/nginx:latest
         state: started
         ports:
-          - "80:80"
+          - "80:85"
