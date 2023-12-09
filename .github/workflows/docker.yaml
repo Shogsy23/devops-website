@@ -46,7 +46,7 @@ jobs:
            DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
            DOCKER_IMAGENAME: ${{ secrets.DOCKER_USERNAME }}/${{ secrets.DOCKER_IMAGENAME }}:latest
         with:
-          playbook: ansible-deploy.yml
+          playbook: ansible-deployment.yml
           directory: ./
           key: ${{ secrets.EC2_SSH_PRIVATE_KEY }}
           options: |
