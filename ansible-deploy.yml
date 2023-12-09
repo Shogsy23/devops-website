@@ -3,7 +3,7 @@
   hosts: webhost
   become: yes
 
-  tasks:
+  tasks: 
 
     - name: Add Docker GPG apt Key
       apt_key: 
