@@ -29,7 +29,7 @@
         DOCKER_PASSWORD: "{{ lookup('env', 'DOCKER_PASSWORD') }}"
       ignore_errors: yes
 
-    - name: Pull Docker Image 
+    - name: Pull Docker Image
       docker_image:
         name: "{{ lookup('env', 'DOCKER_IMAGENAME') }}"
         source: pull
